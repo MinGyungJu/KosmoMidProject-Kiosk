@@ -70,7 +70,7 @@ $(function() {
 	});
 
 	//주문하기 버튼 눌릴시 총액나오게하기
-	$('#btn').click(function() {
+	$('#btn2').click(function() {
 		alert('결제하실 금액은은 ' + sum + '원 입니다.')
 	})
 })
