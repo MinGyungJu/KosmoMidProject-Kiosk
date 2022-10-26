@@ -72,10 +72,15 @@ $(function() {
 	//주문하기 버튼 눌릴시 총액나오게하기
 	$('#btn2').click(function() {
 		alert('결제하실 금액은은 ' + sum + '원 입니다.')
+		$('#listTable tr td').remove();
+		$('#total').attr('value','0'); 
+		sum=0;
 	})
 	
-	//
+	//삭제버튼
 	$('#btn').click(function(){
+		$('#total').attr('value','0');
+		sum=0;
 		$('#listTable tr td').remove();
 	})
 	
